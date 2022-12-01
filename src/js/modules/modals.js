@@ -69,7 +69,7 @@ const modals = () => {
 
     function openByScroll(selector) {
         window.addEventListener('scroll', () => {
-            let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+            let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight) - 1;
 
             if (!btnPressed && (window.pageYOffset + document.documentElement.clientHeight >=
             scrollHeight)) {
