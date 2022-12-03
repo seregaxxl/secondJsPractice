@@ -1,4 +1,4 @@
-import { getData } from "./requests";
+import { getData } from "../services/requests";
 const showMoreStyles = (trigger, wrapper) => {
     const btn = document.querySelector(trigger);
 
