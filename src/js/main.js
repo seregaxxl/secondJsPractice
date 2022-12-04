@@ -9,6 +9,8 @@ import calc from './modules/calc';
 import filter from './modules/filter';
 import pictureSize from './modules/pictureSize';
 import accordeon from './modules/accordeon';
+import burger from './modules/burger';
+import scrolling from './modules/scrolling';
 
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
@@ -19,9 +21,12 @@ window.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="message"]');
-    showMoreStyles('.button-styles', '#styles .row');
+    showMoreStyles('.button-styles', '.styles-2');
     calc('#size', '#material', '#options', '.promocode', '.calc-price');
     filter();
     pictureSize('.sizes-block');
     accordeon('.accordion-heading');
+    burger('.burger-menu', '.burger');
+    scrolling('.pageup');
+    // scrolling('#fotozaika');
 });
